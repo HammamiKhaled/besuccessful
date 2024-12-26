@@ -1,2 +1,2 @@
-# besuccessful.github.io
+# besuccessful
 Web page demo for an LLC company
