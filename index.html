@@ -1,1 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Be Successful LLC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
+		<!-- Header -->
+			<header id="header">
+				<h1>Be Successful LLC</h1>
+				<p>Welcome to our website<br />
+				We help promote your products. Don't hesitate to contact us</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form method="post" id="signup-form" action="mailto:contact@be-successful.us">
+				<input type="text" name="message" id="email" placeholder="Message" />
+				<input type="button" value="Send Message" onclick="sendEmail()" />
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Be Successful LLC.</li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sendEmail() {
+					// Get user input
+					//const subject = document.getElementById('subject').value;
+					const body = document.getElementById('email').value //+ "\n\n" + document.getElementById('name').value;
+		
+					// Encode user input for use in a URL
+					//const subjectEncoded = encodeURIComponent(subject);
+					const bodyEncoded = encodeURIComponent(body);
+		
+					// Construct mailto link
+					const mailtoLink = `mailto:contact@be-successful.us?body=${bodyEncoded}`;
+		
+					// Open the mailto link
+					window.location.href = mailtoLink;
+				}
+			</script>
+
+	</body>
+</html>
